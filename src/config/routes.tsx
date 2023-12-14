@@ -14,10 +14,10 @@ export function appRouter() {
       children: [
         {
           path: "/",
-          element: <Navigate to='/landing' />,
+          element: <Navigate to='/onboarding' />,
         },
         {
-          path: "/landing",
+          path: "/onboarding",
           element: <HomePage />,
         },
         {

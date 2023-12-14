@@ -1,5 +1,10 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import BaseLayout from "../layout/Base";
+import HomePage from "../pages/HomePage";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContactPage";
+import ServicesPage from "../pages/ServicesPage";
+import ProjectsPage from "../pages/ProjectsPage";
 
 export function appRouter() {
   return createBrowserRouter([
@@ -13,23 +18,23 @@ export function appRouter() {
         },
         {
           path: "/landing",
-          element: <>home</>,
+          element: <HomePage />,
         },
         {
           path: "/about",
-          element: <>about</>,
+          element: <AboutPage />,
         },
         {
           path: "/contact",
-          element: <>contact</>,
+          element: <ContactPage />,
         },
         {
           path: "/services",
-          element: <>services</>,
+          element: <ServicesPage />,
         },
         {
           path: "/projects",
-          element: <>projects</>,
+          element: <ProjectsPage />,
         },
       ],
     },

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function BaseLayout() {
   return (
-    <section>
+    <section className='selection:bg-black selection:text-white'>
       <Navbar />
       <Outlet />
       <Footer />
